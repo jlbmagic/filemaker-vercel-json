@@ -32,7 +32,7 @@ export default async function handler(req, res) {
   const processed = {
     status: "success",
     timestamp: Date.now(),
-    data: JSON.stringify(result),
+    result,
   };
 
   res.status(200).json(processed);
